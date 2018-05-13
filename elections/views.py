@@ -9,8 +9,8 @@ from django.db.models import Sum
 
 # Create your views here.
 def index(request):
-    logging.error('error log test');
-    logging.warning('warning log test');
+    logging.error('error log test')
+    logging.warning('warning log test')
 
     candidates = Candidate.objects.all()
     context = {'candidates': candidates}
